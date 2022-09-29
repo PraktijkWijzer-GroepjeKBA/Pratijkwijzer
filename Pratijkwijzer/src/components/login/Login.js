@@ -3,7 +3,9 @@ import './login.scss';
 
 const Login = () => {
   return (
-    <form>test</form>
+    <div className='blur-background'>
+      <form>test</form>
+      </div>
   )
 }
 
