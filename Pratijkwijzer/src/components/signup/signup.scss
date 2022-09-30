@@ -10,7 +10,7 @@
     height: 100vh;  
     backdrop-filter: blur(2px);
 
-    .login-form {
+    .signup-form {
         position: absolute;
         width: 600px;
         height: 450px;
@@ -50,8 +50,7 @@
             height: 80%;
 
             h1 {
-                width: 45%;
-                text-align: center;
+                width: 70%;
                 height: auto;
                 padding: 5px;
                 background-color: #8dae68;
@@ -59,23 +58,60 @@
                 border-radius: 12px;
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
+                font-size: 1em;
+                text-align: center;
             }
-    
-            label {
-                margin-top: 15px;
+            
+            .input-field {
+                display: flex;
+                flex-direction: column;
                 width: 100%;
-                color: #fff;
-                font-size: 1.2em;
-            }
-    
-            input {
+                height: auto;
                 margin-top: 5px;
-                border-radius: 12px;
-                border: none;
-                z-index: 15;
-                padding: 5px;
+
+                label {
+                    margin-top: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-size: 1.2em;    
+                }
+
+                input {
+                    margin-top: 5px;
+                    border-radius: 12px;
+                    border: none;
+                    z-index: 15;
+                    padding: 5px;
+                }  
             }
-    
+            
+            .input-container {
+                margin-top: 10px;
+                display: flex;
+                width: 100%;
+                height: auto;
+
+                .field {
+                    width: 50%;
+                    height: auto;
+
+                    label {
+                        width: 100%;
+                        color: #fff;
+                        font-size: 1.2em;        
+                    }
+
+                    input {
+                        width: 75%;
+                        margin-top: 10px;
+                        border-radius: 12px;
+                        border: none;
+                        z-index: 15;
+                        padding: 5px;
+                    }      
+                }
+            }
+
             button {
                 margin-top: 30px;
                 width: 130px;
@@ -90,17 +126,6 @@
                     background-color: #95b077;
                 }
             }
-    
-            .login-info {
-                font-size: 0.8em;
-                margin-top: 20px;
-                color: #fff;
-                text-decoration: underline #fff;
-    
-                a {
-                    color: #fff;
-                }
-            }    
         }
     }
 }
