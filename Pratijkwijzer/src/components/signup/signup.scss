@@ -20,8 +20,7 @@
         transform: translate(-50%,-50%);
         z-index: 1000;
         border-radius: 12px;
-        padding-top:  15px;
-        padding-left: 30px;
+        padding: 20px;
         position: relative;
 
         .closing-form {
@@ -30,7 +29,12 @@
             top: 5px;
             color: #fff;
             width: 40px;
-            height: 40px;  
+            height: 40px;
+        }
+
+        .closing-form:hover .fa-icon {
+            color: red;
+            background-color: red;
         }
 
         .background-login-image {
@@ -82,7 +86,11 @@
                     border: none;
                     z-index: 15;
                     padding: 5px;
-                }  
+                }
+                
+                input[type="text"], input[type="password"] {
+                    padding: 5px;
+                }
             }
             
             .input-container {
@@ -108,7 +116,11 @@
                         border: none;
                         z-index: 15;
                         padding: 5px;
-                    }      
+                    }    
+                    
+                    input[type="text"] {
+                        padding: 5px;
+                    }
                 }
             }
 

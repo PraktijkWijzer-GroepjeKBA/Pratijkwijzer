@@ -1,9 +1,9 @@
 import React from 'react';
 import './frontpage.scss';
-import background from './front-page-image.png';
+import background from '../../img/front-page-image.png';
 
 
-const Frontpage = () => {
+const Frontpage = ({ user }) => {
   return (
     <div>
     <div style={{ backgroundImage: `url(${background})` }} className='background-image'></div>
@@ -12,6 +12,7 @@ const Frontpage = () => {
     <div className='text-2'>CampingMolerat<br></br><span>Where molerats can be friends</span></div>
     <div className='text-btn-field'>
     <button>Explore camps</button>
+    {user?.email}
     </div>
     </div>
     </div>

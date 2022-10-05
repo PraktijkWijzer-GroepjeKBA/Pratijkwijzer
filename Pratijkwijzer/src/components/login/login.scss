@@ -20,8 +20,7 @@
         transform: translate(-50%,-50%);
         z-index: 1000;
         border-radius: 12px;
-        padding-top:  15px;
-        padding-left: 30px;
+        padding: 20px;
         position: relative;
 
         .closing-form {
@@ -75,7 +74,11 @@
                 z-index: 15;
                 padding: 5px;
             }
-    
+
+            input[type="text"], input[type="password"] {
+                padding: 5px;
+            }
+                
             button {
                 margin-top: 30px;
                 width: 130px;

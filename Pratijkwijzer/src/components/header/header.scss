@@ -37,18 +37,29 @@ Header {
 
         .home-btn {
             background-color: $home-btn-color;
+
+            &:hover {
+                background-color: #d1be71;
+                cursor: pointer;
+            }
         }
 
         .login-btn {
             background-color: $login-btn-color;
-        }
 
-        .support-btn {
-            background-color: $support-btn-color;
+            &:hover {
+                background-color: #32706c;
+                cursor: pointer;
+            }
         }
-
+        
         .about-btn {
             background-color: $about-btn-color;
+
+            &:hover {
+                background-color: #590881;
+                cursor: pointer;
+            }
         }
     }
 
