@@ -1,0 +1,8 @@
+@import '/src/style-helper/colors.scss';
+@import '/src/style-helper/prefix.scss';
+@import './src/style-helper/mixin.scss';
+
+    .background-image {
+        position: absolute;
+        top: 80px;
+    }
