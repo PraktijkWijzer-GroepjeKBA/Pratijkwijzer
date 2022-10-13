@@ -47,7 +47,6 @@ function App() {
   return (
     <div>
       {/* <Headerfrontpage /> */}
-      <Headerhomepage />
       <Routes>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
