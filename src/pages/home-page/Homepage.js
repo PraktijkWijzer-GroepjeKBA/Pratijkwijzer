@@ -18,7 +18,7 @@ const Homepage = () => {
             <img className='image' src={kaart}></img>
         </div>
         <div className='bg' style={{ backgroundImage: `url(${backgroundExperience})` }}></div>
-        </div>
+      </div>
   )
 }
 
