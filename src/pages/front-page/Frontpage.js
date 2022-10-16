@@ -1,11 +1,13 @@
 import React from 'react';
 import './frontpage.scss';
 import background from '../../img/front-page-image.png';
+import Headerfrontpage from '../../components/header-front-page/Headerfrontpage';
 
 
 const Frontpage = ({ user }) => {
   return (
     <div>
+      <Headerfrontpage />
     <div style={{ backgroundImage: `url(${background})` }} className='background-image'></div>
     <div className='background-image-text'>
       {console.log(user)}

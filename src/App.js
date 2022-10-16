@@ -1,6 +1,7 @@
 // React Router
 import { Route, Routes } from "react-router-dom";
 
+
 //components
 import Headerfrontpage from './components/header-front-page/Headerfrontpage';
 import Headerhomepage from './components/header-home-page/Headerhomepage';
@@ -43,16 +44,14 @@ function App() {
     }
   }, [user]);
 
-
   return (
     <div>
-      {/* <Headerfrontpage /> */}
       <Routes>
+        <Route path="/" element={<Frontpage />}></Route>
+        <Route path="/Homepage" element={<Homepage />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
       </Routes>
-      {/* <Frontpage /> */}
-      <Homepage />
   </div>
   );
 }
