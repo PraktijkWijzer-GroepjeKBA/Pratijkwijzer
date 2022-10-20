@@ -1,6 +1,7 @@
 import React from 'react'
 import './headerhomepage.scss';
 
+import { Link } from "react-router-dom";
 
 const Headerhomepage = () => {
   return (
@@ -10,7 +11,7 @@ const Headerhomepage = () => {
         </div>
         <div className='header-right-side'>
             <button>Booking</button>
-            <button>Support</button>
+            <Link to="Support"><button>Support</button></Link>
             <button>Login</button>
             <button>About</button>
         </div>
