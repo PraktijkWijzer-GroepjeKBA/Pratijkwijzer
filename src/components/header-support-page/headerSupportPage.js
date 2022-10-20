@@ -1,7 +1,7 @@
 import React from 'react'
 import './headerSupportPage.scss';
 
-const headerSupportPage = () => {
+const HeaderSupport = () => {
   return (
     <div>
       header support page
@@ -9,4 +9,4 @@ const headerSupportPage = () => {
   )
 }
 
-export default headerSupportPage
+export default HeaderSupport
