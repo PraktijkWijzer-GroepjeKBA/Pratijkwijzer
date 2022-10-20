@@ -5,6 +5,7 @@ import backgroundExperience from '../../img/test.png';
 import Headerhomepage from '../../components/header-home-page/Headerhomepage';
 
  import kaart from '../../img/kaart.png';
+ import campingSpots from '../../img/camping-spots.png';
 
 
 const Homepage = () => {
@@ -17,8 +18,52 @@ const Homepage = () => {
         <div className='image-container'>
             <img className='image' src={kaart}></img>
         </div>
-        <div className='bg' style={{ backgroundImage: `url(${backgroundExperience})` }}></div>
+      <div className='bg-container' style={{ backgroundImage: `url(${backgroundExperience})` }}>
+        <div className='row-box'>
+          <div className='background-text'>
+            <h2>Explore Camps</h2>
+          </div>
+          <div className='row'>
+            <div className='card'>
+              <img className='camping-spot-image' src={campingSpots}></img>
+              <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
+              <div className='card-length'>10x10 Meters</div>
+              <div className='price-spot'>€50,- per day</div>
+              <div className='btn-card-field'>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div className='card'>
+            <img className='camping-spot-image' src={campingSpots}></img>
+              <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
+              <div className='card-length'>10x10 Meters</div>
+              <div className='price-spot'>€50,- per day</div>
+              <div className='btn-card-field'>
+                <button>Buy</button>
+              </div>
+            </div>
+            <div className='card'>
+            <img className='camping-spot-image' src={campingSpots}></img>
+              <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
+              <div className='card-length'>10x10 Meters</div>
+              <div className='price-spot'>€50,- per day</div>
+              <div className='btn-card-field'>
+                <button>Buy</button>
+              </div>
+            </div>
+          </div>
+          <div className='background-text'>
+            <h2>Molerat Activities</h2>
+          </div>
+          <div className='row'>
+            <div className='card'></div>
+            <div className='card'></div>
+            <div className='card'></div>
+            <div className='card'></div>
+          </div>
+        </div>
       </div>
+    </div>
   )
 }
 

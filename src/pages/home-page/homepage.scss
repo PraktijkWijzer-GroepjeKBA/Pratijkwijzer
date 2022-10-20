@@ -24,7 +24,88 @@
         }
     }
 
-    .bg {
+    .bg-container {
         background-size: 100vw;
-        height: 1100px;
+        height: 880px;
+
+        .row-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 900px;
+            width: 100%;
+            padding: 15px;
+
+        .background-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25%;
+            width: 100%;
+
+            h2 {
+                color: #fff;
+                font-size: 2em;
+            }
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 20%;
+            width: 75%;
+
+            .card {
+                height: 300px;
+                width: 250px;
+                padding: 15px;
+                background-color: #fff;
+                border-radius: 12px;
+
+                .camping-spot-image {
+                    height: 120px;
+                    width: 100%;
+                    border-radius: 12px;
+                }
+
+                .card-text {
+                    border-top: 1px solid #000;
+                    width: 90%;
+                    height: 30px
+                }
+
+                .card-length {
+                    color: #000;
+                    font-size: 0.9em;
+                    height: 20px;
+                    width: 100%;
+                    margin-top: 1.5em;
+                    font-weight: bold;
+                }
+
+                .price-spot {
+                    font-size: 1.2em;
+                    color: lightseagreen;
+                    border-bottom: 1px solid #000;
+                }
+
+                .btn-card-field {
+                    @include display-flex-full;
+                    margin-top: 0.4em;
+                    height: 50px;
+                    width: 100%;
+
+                    button {
+                        width: 40%;
+                        background-color: $header-color;
+                        border-radius: 12px;
+                        border: none;
+                        color: #fff;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
     }
+}
