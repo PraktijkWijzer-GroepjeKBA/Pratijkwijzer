@@ -9,8 +9,9 @@ import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 //pages
-import Frontpage from './pages/front-page/Frontpage'
+import Frontpage from './pages/front-page/Frontpage';
 import Homepage from "./pages/home-page/Homepage";
+import Supportpage from './pages/support-page/SupportPage';
 
 import { useEffect, useState } from "react";
 import { auth, db } from './firebase/firebase.config';
@@ -51,6 +52,7 @@ function App() {
         <Route path="/Homepage" element={<Homepage />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
+        <Route path="/Homepage/Support" element={<Supportpage />}></Route>
       </Routes>
   </div>
   );

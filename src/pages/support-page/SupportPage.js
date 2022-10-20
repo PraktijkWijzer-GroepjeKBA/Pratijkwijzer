@@ -1,11 +1,14 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
+import headerSupport from '../../components/header-support-page/headerSupportPage'
 
-export class SupportPage extends PureComponent {
-  render() {
-    return (
-      <div>SupportPage</div>
-    )
-  }
+const SupportPage = () => {
+  return (
+    <div>
+      <headerSupport />
+
+      <div> test test test test</div>
+    </div>
+  )
 }
 
 export default SupportPage
