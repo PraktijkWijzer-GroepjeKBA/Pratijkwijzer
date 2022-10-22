@@ -15,18 +15,18 @@ const Homepage = ({ user }) => {
       <div className='container-header'>
           <Headerhomepage />
       </div>
-        <div className='background-image' style={{ backgroundImage: `url(${background})` }}></div>
+        <div className='background-image' style={{ backgroundImage: `url(${background})` }} alt='#'></div>
         <div className='image-container'>
-            <img className='image' src={kaart}></img>
+            <img className='image' src={kaart} alt='#'></img>
         </div>
-      <div className='bg-container' style={{ backgroundImage: `url(${backgroundExperience})` }}>
+      <div className='bg-container' style={{ backgroundImage: `url(${backgroundExperience})`}} alt='#'>
         <div className='row-box'>
           <div className='background-text'>
             <h2>Explore Camps</h2>
           </div>
           <div className='row'>
             <div className='card'>
-              <img className='camping-spot-image' src={campingSpots}></img>
+              <img className='camping-spot-image' src={campingSpots} alt='#'></img>
               <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
               <div className='card-length'>10x10 Meters</div>
               <div className='price-spot'>€50,- per day</div>
@@ -35,7 +35,7 @@ const Homepage = ({ user }) => {
               </div>
             </div>
             <div className='card'>
-            <img className='camping-spot-image' src={campingSpots}></img>
+            <img className='camping-spot-image' src={campingSpots} alt='#'></img>
               <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
               <div className='card-length'>10x10 Meters</div>
               <div className='price-spot'>€50,- per day</div>
@@ -44,7 +44,7 @@ const Homepage = ({ user }) => {
               </div>
             </div>
             <div className='card'>
-            <img className='camping-spot-image' src={campingSpots}></img>
+            <img className='camping-spot-image' src={campingSpots} alt='#'></img>
               <div className='card-text'>Lorem ipsum Lorem ipsum Lorem ipsum</div>
               <div className='card-length'>10x10 Meters</div>
               <div className='price-spot'>€50,- per day</div>
@@ -54,7 +54,7 @@ const Homepage = ({ user }) => {
             </div>
           </div>
           <div className='background-text'>
-            <h2>Molerat Activities { user.email }</h2>
+            <h2>Molerat Activities { user?.email }</h2>
           </div>
           <div className='row'>
             <div className='card'></div>

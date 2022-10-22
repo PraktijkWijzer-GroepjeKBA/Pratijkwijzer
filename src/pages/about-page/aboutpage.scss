@@ -1,0 +1,47 @@
+// body {
+//     background-color: #1B4845;
+
+    .image-container {
+        width: 500px;
+        height: 500px;
+        position: relative;
+
+        .about-img-background {
+            position: absolute;
+            bottom: 35px;
+            left: -15px;
+            background-color: #345452;
+            height: 500px;
+            width: 400px;
+            border-radius: 35px;
+        }
+
+        .about-img {
+            height: 500px;
+            width: 400px;
+            z-index: 10;
+        }
+    }
+
+    .about-container {
+        width: 750px;
+        height: 520px;
+        position: relative;
+        display: flex;
+
+        .about-text {
+            width: 50%;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+        .left {
+            background-color: #FEFEFE;
+        }
+
+        .right {
+            background-color: #ECECEC;
+            position: absolute;
+            right: 30px;
+        }
+    }

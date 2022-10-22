@@ -21,7 +21,7 @@ const Headerfrontpage = ({ user }) => {
         <div className='header-button'>
             <Link to='Homepage'><button className='home-btn'>Home</button></Link>
             <Link to='Login'><button className='login-btn'>Login</button></Link> 
-            <button className='about-btn'>About</button>
+            <Link to='Aboutpage'><button className='about-btn'>About</button></Link>
             {user && (
           <button className="logoutBtn" onClick={() => logout()}>
             Logout

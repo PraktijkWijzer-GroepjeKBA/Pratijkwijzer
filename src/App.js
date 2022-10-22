@@ -3,47 +3,25 @@ import { Route, Routes } from "react-router-dom";
 
 
 //components
-import Headerfrontpage from './components/header-front-page/Headerfrontpage';
-import Headerhomepage from './components/header-home-page/Headerhomepage';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 //pages
 import Frontpage from './pages/front-page/Frontpage';
 import Homepage from "./pages/home-page/Homepage";
-import Supportpage from './pages/support-page/SupportPage';
+import Aboutpage from "./pages/about-page/Aboutpage";
 
-import { useEffect, useState } from "react";
-import { auth, db } from './firebase/firebase.config';
+import { useState } from "react";
+import { auth } from './firebase/firebase.config';
 import { onAuthStateChanged } from 'firebase/auth';
-import { doc, getDoc } from "firebase/firestore";
 
 function App() {
 
   const [user, setUser] = useState({});
-  const [profile, setProfile] = useState({});
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);
   });
-
-  const getProfileData = async () => {
-    if (user && user.length !== 0) {
-      const userRef = doc(db, "users", user.uid);
-      const userSnap = await getDoc(userRef);
-      if (userSnap.exists()) {
-        setProfile(userSnap.data());
-      } else {
-        setProfile({});
-      }
-    }
-  };
-
-  useEffect(() => {
-    if (user?.uid) {
-      getProfileData();
-    }
-  }, [user]);
 
   return (
     <div>
@@ -52,6 +30,7 @@ function App() {
         <Route path="/Homepage" element={<Homepage user={user} />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
+        <Route path='/Aboutpage' element={<Aboutpage />}></Route>
       </Routes>
   </div>
   );
