@@ -3,12 +3,13 @@
 @import './src/style-helper/mixin.scss';
 
 .footer-container {
-    height: 400px;
+    height: 550px;
     width: 100%;
     background-color: $footer-color;
 
     .footer-data-container {
         display: flex;
+        padding: 40px;
         justify-content: space-evenly;
         height: 80%;
         width: 100%;
@@ -41,9 +42,10 @@
                 color: #fff;
 
                 .text-link {
-                   height: 20%;
-                   width: 40%;
-                   color: #fff; 
+                    text-align: center;
+                    height: 20%;
+                    width: 40%;
+                    color: #fff; 
 
                    &:hover {
                     color: rgb(146, 143, 143); 

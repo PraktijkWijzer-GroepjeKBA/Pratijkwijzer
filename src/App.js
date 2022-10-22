@@ -48,11 +48,10 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Frontpage />}></Route>
-        <Route path="/Homepage" element={<Homepage />}></Route>
+        <Route path="/" element={<Frontpage user={user} />}></Route>
+        <Route path="/Homepage" element={<Homepage user={user} />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
-        <Route path="/Homepage/Support" element={<Supportpage />}></Route>
       </Routes>
   </div>
   );

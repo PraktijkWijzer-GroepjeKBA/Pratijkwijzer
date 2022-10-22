@@ -9,7 +9,7 @@ import Footer from '../../components/footer/Footer';
  import campingSpots from '../../img/camping-spots.png';
 
 
-const Homepage = () => {
+const Homepage = ({ user }) => {
   return (
     <div className='#'>
       <div className='container-header'>
@@ -54,7 +54,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className='background-text'>
-            <h2>Molerat Activities</h2>
+            <h2>Molerat Activities { user.email }</h2>
           </div>
           <div className='row'>
             <div className='card'></div>

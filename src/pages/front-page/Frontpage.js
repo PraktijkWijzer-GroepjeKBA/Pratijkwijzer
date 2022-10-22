@@ -7,10 +7,9 @@ import Headerfrontpage from '../../components/header-front-page/Headerfrontpage'
 const Frontpage = ({ user }) => {
   return (
     <div>
-      <Headerfrontpage />
+      <Headerfrontpage user={user} />
     <div style={{ backgroundImage: `url(${background})` }} className='background-image'></div>
     <div className='background-image-text'>
-      {console.log(user)}
     <div className='text-1'>a life time experience</div>
     <div className='text-2'>CampingMolerat<br></br><span>Where molerats can be friends</span></div>
     <div className='text-btn-field'>

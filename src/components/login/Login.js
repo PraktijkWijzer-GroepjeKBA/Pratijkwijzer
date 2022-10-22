@@ -21,7 +21,7 @@ const Login = () => {
   const login = async () => {
     try {
       await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-      navigate("gelukt");
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }

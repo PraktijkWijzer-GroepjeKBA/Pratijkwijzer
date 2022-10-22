@@ -38,6 +38,7 @@ const Signup = () => {
       };
 
       await setDoc(doc(db, "users", user.user.uid), userData);
+      navigate("/");
       
     } catch (error) {
       console.log(error.message);

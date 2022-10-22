@@ -1,10 +1,20 @@
 import React from 'react'
 import './headerfrontpage.scss';
-
+import { auth } from "../../firebase/firebase.config";
 import { Link } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
 
 
-const Headerfrontpage = () => {
+const Headerfrontpage = ({ user }) => {
+
+  const navigate = useNavigate();
+
+  const logout = async () => {
+    await signOut(auth);
+    navigate("/");
+  };
+
   return (
     <div className='header-front-page'>
         <div className='header-title'>CampingMolerat</div>
@@ -12,6 +22,12 @@ const Headerfrontpage = () => {
             <Link to='Homepage'><button className='home-btn'>Home</button></Link>
             <Link to='Login'><button className='login-btn'>Login</button></Link> 
             <button className='about-btn'>About</button>
+            {user && (
+          <button className="logoutBtn" onClick={() => logout()}>
+            Logout
+          </button>
+        )}
+        { user?.email }
         </div>
     </div>
   )
