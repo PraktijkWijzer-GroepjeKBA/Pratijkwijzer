@@ -1,12 +1,18 @@
 import React from 'react'
 import './headerSupportPage.scss';
 
-const headerSupportPage = () => {
+import { Link } from 'react-router-dom';
+
+const HeaderSupport = () => {
   return (
-    <div>
-      header support page
-    </div>
+    <header>
+      <div className='supportNav'>
+          <div className='title'>CampingMolerat <span>/ Support</span></div>
+          <button>Logout</button>
+          <Link to='../Homepage'><button className='home-btn'>Home</button></Link>
+      </div>
+    </header>
   )
 }
 
-export default headerSupportPage
+export default HeaderSupport

@@ -1,10 +1,10 @@
-import React from 'react'
-import headerSupport from '../../components/header-support-page/headerSupportPage'
+import React from 'react';
+import HeaderSupportPage from '../../components/header-support-page/HeaderSupportPage';
 
 const SupportPage = () => {
   return (
     <div>
-      <headerSupport />
+      <HeaderSupportPage />
 
       <div> test test test test</div>
     </div>
