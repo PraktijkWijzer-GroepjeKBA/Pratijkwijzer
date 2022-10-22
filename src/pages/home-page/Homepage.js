@@ -3,6 +3,7 @@ import './homepage.scss';
 import background from '../../img/home-page-image.png';
 import backgroundExperience from '../../img/test.png';
 import Headerhomepage from '../../components/header-home-page/Headerhomepage';
+import Footer from '../../components/footer/Footer';
 
  import kaart from '../../img/kaart.png';
  import campingSpots from '../../img/camping-spots.png';
@@ -63,6 +64,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
