@@ -21,8 +21,9 @@
     .header-button {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
         justify-content: space-evenly;
-        width: 40%;
+        width: 50%;
         height: 100%;
 
         button {
@@ -60,6 +61,16 @@
                 background-color: #590881;
                 cursor: pointer;
             }
+        }
+
+        .logoutBtn {
+            background-color: #d1be71;
+
+            &:hover {
+                background-color: #ccac2b;
+                cursor: pointer;
+            }
+
         }
     }
 }

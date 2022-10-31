@@ -27,7 +27,6 @@ const Headerfrontpage = ({ user }) => {
             Logout
           </button>
         )}
-        { user?.email }
         </div>
     </div>
   )

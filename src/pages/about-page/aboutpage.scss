@@ -1,9 +1,15 @@
-// body {
-//     background-color: #1B4845;
+    
+    .container {
+        background-color: #1B4845;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100vh;
 
     .image-container {
-        width: 500px;
-        height: 500px;
+        width: 375px;
+        height: 375px;
         position: relative;
 
         .about-img-background {
@@ -11,21 +17,21 @@
             bottom: 35px;
             left: -15px;
             background-color: #345452;
-            height: 500px;
-            width: 400px;
+            height: 375px;
+            width: 300px;
             border-radius: 35px;
         }
 
         .about-img {
-            height: 500px;
-            width: 400px;
+            height: 375px;
+            width: 300px;
             z-index: 10;
         }
     }
 
     .about-container {
-        width: 750px;
-        height: 520px;
+        width: 500px;
+        height: 390px;
         position: relative;
         display: flex;
 
@@ -45,3 +51,4 @@
             right: 30px;
         }
     }
+}
