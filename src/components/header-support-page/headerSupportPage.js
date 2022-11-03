@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const HeaderSupport = () => {
   return (
-    <header>
+    <div className='header'>
       
           <div className='title'>CampingMolerat &nbsp; <span>-> Support</span></div>
 
@@ -15,7 +15,7 @@ const HeaderSupport = () => {
           </div>
 
       
-    </header>
+    </div>
   )
 }
 

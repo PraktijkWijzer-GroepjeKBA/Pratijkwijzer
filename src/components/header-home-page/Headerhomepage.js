@@ -22,7 +22,7 @@ const Headerhomepage = ({ user }) => {
         </div>
         <div className='header-right-side'>
             <button>Booking</button>
-            <Link to=""><button>Support</button></Link>
+            <Link to="/Support"><button>Support</button></Link>
             <Link to="/Login"><button>Login</button></Link>
             {user && (
           <button className="logoutBtn" onClick={() => logout()}>
