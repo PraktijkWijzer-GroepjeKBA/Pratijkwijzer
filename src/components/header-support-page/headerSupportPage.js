@@ -6,11 +6,15 @@ import { Link } from 'react-router-dom';
 const HeaderSupport = () => {
   return (
     <header>
-      <div className='supportNav'>
-          <div className='title'>CampingMolerat <span>/ Support</span></div>
-          <button>Logout</button>
-          <Link to='../Homepage'><button className='home-btn'>Home</button></Link>
-      </div>
+      
+          <div className='title'>CampingMolerat &nbsp; <span>-> Support</span></div>
+
+          <div className='buttons'>
+          <Link to='../Login'><button id="b1">Login</button></Link>
+          <Link to='../Homepage'><button id="b2">Home</button></Link>
+          </div>
+
+      
     </header>
   )
 }

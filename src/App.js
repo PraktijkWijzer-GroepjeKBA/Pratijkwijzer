@@ -10,6 +10,7 @@ import Signup from './components/signup/Signup';
 import Frontpage from './pages/front-page/Frontpage';
 import Homepage from "./pages/home-page/Homepage";
 import Aboutpage from "./pages/about-page/Aboutpage";
+import SupportPage from "./pages/support-page/SupportPage";
 
 import { useState } from "react";
 import { auth } from './firebase/firebase.config';
@@ -30,7 +31,8 @@ function App() {
         <Route path="/Homepage" element={<Homepage user={user} />}></Route>
         <Route path='/Login' element={<Login />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
-        <Route path='/Aboutpage' element={<Aboutpage user={user} />}></Route>
+        <Route path='/Aboutpage' element={<Aboutpage />}></Route>
+        <Route path='/Homepage/Support' element={<SupportPage />}></Route>
       </Routes>
   </div>
   );
