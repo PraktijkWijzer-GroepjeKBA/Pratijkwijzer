@@ -21,6 +21,10 @@ header {
         h1 {
             color: $header-color;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     .header-right-side {

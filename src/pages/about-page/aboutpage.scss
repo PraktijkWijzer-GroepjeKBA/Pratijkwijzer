@@ -43,6 +43,17 @@
 
         .left {
             background-color: #FEFEFE;
+            position: relative;
+
+            p {
+                color: #000;
+                position: absolute;
+                left: 15px;
+                bottom: 30px;
+                height: auto;
+                width: 450px;
+                z-index: 100;
+            }
         }
 
         .right {

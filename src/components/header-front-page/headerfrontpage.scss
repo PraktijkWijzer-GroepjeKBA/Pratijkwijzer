@@ -63,6 +63,16 @@
             }
         }
 
+        .support-btn {
+            background-color: orange;
+
+            &:hover {
+                background-color: rgb(166, 111, 7);
+                cursor: pointer;
+            }
+
+        }
+
         .logoutBtn {
             background-color: #d1be71;
 
