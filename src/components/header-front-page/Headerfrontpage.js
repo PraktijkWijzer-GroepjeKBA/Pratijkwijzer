@@ -20,14 +20,9 @@ const Headerfrontpage = ({ user }) => {
         <div className='header-title'>CampingMolerat</div>
         <div className='header-button'>
             <Link to='Homepage'><button className='home-btn'>Home</button></Link>
-            <Link to='Login'><button className='login-btn'>Login</button></Link> 
             <Link to='Aboutpage'><button className='about-btn'>About</button></Link>
           <Link to='Support'><button className='support-btn'>Support</button></Link>
-            {user && (
-          <button className="logoutBtn" onClick={() => logout()}>
-            Logout
-          </button>
-        )}
+          {user ?<button className="logoutBtn" onClick={() => logout()}>Logout</button> : <Link to='Login'><button className='login-btn'>Login</button></Link>}           
         </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderSupportPage from '../../components/header-support-page/HeaderSupportPage';
+import HeaderSupportPage from '../../components/header-support-page/headerSupportPage';
 
 const SupportPage = () => {
   return (
@@ -11,4 +11,7 @@ const SupportPage = () => {
   )
 }
 
+
+// login script {user ? <button className="logoutBtn" onClick={() => logout()}>Logout</button> : <Link to='../Login'><button className='login-btn'>Login</button></Link>}           
+          
 export default SupportPage

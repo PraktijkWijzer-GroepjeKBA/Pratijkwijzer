@@ -23,12 +23,7 @@ const Headerhomepage = ({ user }) => {
         <div className='header-right-side'>
             <button>Booking</button>
             <Link to="/Support"><button>Support</button></Link>
-            <Link to="/Login"><button>Login</button></Link>
-            {user && (
-          <button className="logoutBtn" onClick={() => logout()}>
-            Logout
-          </button>
-        )}
+            {user ? <button className="logoutBtn" onClick={() => logout()}>Logout</button> : <Link to='../Login'><button className='login-btn'>Login</button></Link>}           
         </div>
     </header>
   )
