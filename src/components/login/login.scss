@@ -3,12 +3,10 @@
 @import './src/style-helper/mixin.scss';
 
 
-.blur-background {
+.test {
     position: absolute;
     z-index: 1000;
-    width: 100%;
-    height: 100vh;  
-    backdrop-filter: blur(2px);
+    height: 100vh;
 
     .login-form {
         position: absolute;
@@ -17,7 +15,7 @@
         background-color: $background-text-color;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-90%,40%);
         z-index: 1000;
         border-radius: 12px;
         padding: 20px;
