@@ -25,8 +25,12 @@
     }
 
     .bg-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-size: 100vw;
         height: 885px;
+        width: 100%;
 
         .row-box {
             display: flex;
@@ -34,7 +38,6 @@
             align-items: center;
             height: 900px;
             width: 100%;
-            padding: 15px;
 
         .background-text {
             display: flex;
