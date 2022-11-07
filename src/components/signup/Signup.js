@@ -5,7 +5,6 @@ import background from '../../img/mole-logo-image.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { Link } from "react-router-dom";
 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase.config';
@@ -14,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 import { db } from '../../firebase/firebase.config';
 import { doc, setDoc } from 'firebase/firestore';
 
-const Signup = () => {
+const Signup = (openSignup, onCloseSignup) => {
 
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
@@ -45,10 +44,18 @@ const Signup = () => {
     }
   };
 
+  if (!openSignup) {
+    console.log('open')
+  } else {
+    console.log('close')
+  }
+
+  console.log(openSignup)
+
   return (
     <div className='blur-background'>
       <div className='signup-form'>
-        <Link to='Frontpage'><FontAwesomeIcon className='closing-form' icon={faXmark}></FontAwesomeIcon></Link>
+        <FontAwesomeIcon onClick={onCloseSignup} className='closing-form' icon={faXmark}></FontAwesomeIcon>
       <div style={{ backgroundImage: `url(${background})` }} className='background-login-image'></div>
         <div className='center-input'>
           <h1>Make an account</h1>

@@ -29,8 +29,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Frontpage user={user} />}></Route>
         <Route path="/Homepage" element={<Homepage user={user} />}></Route>
-        <Route path='/Login' element={<Login />}></Route>
-        <Route path='/Signup' element={<Signup />}></Route>
         <Route path='/Aboutpage' element={<Aboutpage />}></Route>
         <Route path='/Support' element={<SupportPage />}></Route>
       </Routes>

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './headerfrontpage.scss';
 import { auth } from "../../firebase/firebase.config";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
+import Login from '../login/Login';
+
+const Headerfrontpage = ({ user}) => {
 
 
-const Headerfrontpage = ({ user }) => {
+  const [openLoginModal, setLoginOpenModal] = useState(false)
 
   const navigate = useNavigate();
 
@@ -20,14 +23,10 @@ const Headerfrontpage = ({ user }) => {
         <div className='header-title'>CampingMolerat</div>
         <div className='header-button'>
             <Link to='Homepage'><button className='home-btn'>Home</button></Link>
-            <Link to='Login'><button className='login-btn'>Login</button></Link> 
             <Link to='Aboutpage'><button className='about-btn'>About</button></Link>
-            <button className='support-btn'>Support</button>
-            {user && (
-          <button className="logoutBtn" onClick={() => logout()}>
-            Logout
-          </button>
-        )}
+            <Link to='Support'><button className='support-btn'>Support</button></Link>
+          {user ?<button className="logoutBtn" onClick={() => logout()}>Logout</button> : <button className='login-btn' onClick={() => setLoginOpenModal(true)}>Login</button>}  
+          <Login openLogin={openLoginModal} onCloseLogin={() => setLoginOpenModal(false)} /> 
         </div>
     </div>
   )

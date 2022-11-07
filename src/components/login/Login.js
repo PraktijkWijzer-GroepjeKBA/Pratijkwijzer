@@ -5,15 +5,16 @@ import background from '../../img/mole-logo-image.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-import { Link } from 'react-router-dom';
-
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase/firebase.config';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Signup from '../signup/Signup';
 
-const Login = () => {
+const Login = ({ openLogin, onCloseLogin, }) => {
 
+  const [openSignupModal, setSignupOpenModal] = useState()
+    
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
   const navigate = useNavigate();
@@ -27,10 +28,12 @@ const Login = () => {
     }
   };
 
+  if (!openLogin) return null;
+
   return (
-    <div className='blur-background'>
+    <div className='test'>
       <div className='login-form'>
-        <Link to='Frontpage'><FontAwesomeIcon className='closing-form' icon={faXmark}></FontAwesomeIcon></Link>
+        <FontAwesomeIcon onClick={onCloseLogin} className='closing-form' icon={faXmark}></FontAwesomeIcon>
       <div style={{ backgroundImage: `url(${background})` }} className='background-login-image'></div>
         <div className='center-input'>
           <h1>Login</h1>
@@ -38,9 +41,10 @@ const Login = () => {
           <input type='text' alt='#' placeholder='Email...' onChange={(e) => { setLoginEmail(e.target.value); }}></input>
           <label>Password</label>
           <input type='password' alt='#' placeholder='Password...' onChange={(e) => { setLoginPassword(e.target.value); }}></input>
-          <button type="submit" onClick={login} >Submit</button>
+          <button type="submit" onClick={login}>Submit</button>
           <div className='login-info'>
-            <Link to='../Signup'><p>Don't have an account yet?</p></Link>
+            <button onClick={() => setSignupOpenModal(true)}>Don't have an account yet?</button>
+            <Signup openSignup={openSignupModal} onCloseSignup={() => setSignupOpenModal(false)} /> 
           </div>
           <div className='login-info'>
             <p>Forgot password?</p>
