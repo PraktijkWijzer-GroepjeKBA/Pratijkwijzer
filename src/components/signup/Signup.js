@@ -13,7 +13,7 @@ import { useNavigate } from 'react-router-dom';
 import { db } from '../../firebase/firebase.config';
 import { doc, setDoc } from 'firebase/firestore';
 
-const Signup = (openSignup, onCloseSignup) => {
+const Signup = ({ openSignupModal, onCloseSignup }) => {
 
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
@@ -44,18 +44,12 @@ const Signup = (openSignup, onCloseSignup) => {
     }
   };
 
-  if (!openSignup) {
-    console.log('open')
-  } else {
-    console.log('close')
-  }
-
-  console.log(openSignup)
+  if (!openSignupModal) return null;
 
   return (
     <div className='blur-background'>
       <div className='signup-form'>
-        <FontAwesomeIcon onClick={onCloseSignup} className='closing-form' icon={faXmark}></FontAwesomeIcon>
+        <FontAwesomeIcon className='closing-form' onClick={onCloseSignup} icon={faXmark}></FontAwesomeIcon>
       <div style={{ backgroundImage: `url(${background})` }} className='background-login-image'></div>
         <div className='center-input'>
           <h1>Make an account</h1>

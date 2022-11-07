@@ -11,9 +11,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Signup from '../signup/Signup';
 
-const Login = ({ openLogin, onCloseLogin, }) => {
+const Login = ({ openLogin, onCloseLogin }) => {
 
-  const [openSignupModal, setSignupOpenModal] = useState()
+  const [openSignupModal, setSignupOpenModal] = useState(false)
+  const [opentest, settest] = useState(false)
+
     
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
@@ -43,15 +45,16 @@ const Login = ({ openLogin, onCloseLogin, }) => {
           <input type='password' alt='#' placeholder='Password...' onChange={(e) => { setLoginPassword(e.target.value); }}></input>
           <button type="submit" onClick={login}>Submit</button>
           <div className='login-info'>
-            <button onClick={() => setSignupOpenModal(true)}>Don't have an account yet?</button>
-            <Signup openSignup={openSignupModal} onCloseSignup={() => setSignupOpenModal(false)} /> 
+            <p onClick={() => {
+              setSignupOpenModal(true); () => setLoginModal(false)}}>Don't have an account yet?</p>
+            <Signup openSignupModal={openSignupModal} onCloseSignup={() => setSignupOpenModal(false)} /> 
           </div>
           <div className='login-info'>
             <p>Forgot password?</p>
           </div>
         </div>
       </div>
-      </div>
+    </div>
   )
 }
 
