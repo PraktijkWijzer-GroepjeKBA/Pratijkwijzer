@@ -1,0 +1,63 @@
+@import '/src/style-helper/colors.scss';
+@import '/src/style-helper/prefix.scss';
+@import './src/style-helper/mixin.scss';
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    padding: 7em;
+
+
+    &__left-container {
+        display: flex;
+        flex-direction: column;
+        width: 32em;
+        height: 90%;
+
+        h2 {
+            color: $header-color;
+            font-size: 1.75rem;
+        }
+
+        button {
+            margin-top: 3em;
+            padding: 1rem;
+            border-radius: 20px;
+            width: 60%;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: bold;
+            background-color: $header-color;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    &__right-container {
+        width: 32em;
+        height: 90%;
+
+        .image-container-support {
+            width: 100%;
+            height: 60%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .information-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 70%;
+            height: 40%;
+            font-size: 0.9rem;
+        }
+    }
+}
