@@ -14,7 +14,7 @@ import Signup from '../signup/Signup';
 const Login = ({ openLogin, onCloseLogin }) => {
 
   const [openSignupModal, setSignupOpenModal] = useState(false)
-  const [opentest, settest] = useState(false)
+  // const [opentest, settest] = useState(false)
 
     
   const [loginEmail, setLoginEmail] = useState("");
@@ -46,7 +46,7 @@ const Login = ({ openLogin, onCloseLogin }) => {
           <button type="submit" onClick={login}>Submit</button>
           <div className='login-info'>
             <p onClick={() => {
-              setSignupOpenModal(true); () => setLoginModal(false)}}>Don't have an account yet?</p>
+              setSignupOpenModal(true)}}>Don't have an account yet?</p>
             <Signup openSignupModal={openSignupModal} onCloseSignup={() => setSignupOpenModal(false)} /> 
           </div>
           <div className='login-info'>

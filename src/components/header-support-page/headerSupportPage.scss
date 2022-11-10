@@ -1,0 +1,67 @@
+@import '/src/style-helper/colors.scss';
+@import '/src/style-helper/prefix.scss';
+@import './src/style-helper/mixin.scss';
+
+.header{
+    // -- opmaak
+    width: 100%;
+    height: 80px;
+    background-color: $support-header-color;
+
+    // -- Flexbox
+    display: flex;
+    align-items: center;
+
+    .title{ 
+        // -- Flexbox
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-left: 6%;
+
+        // -- opmaak 
+        width: 70%;
+        font-weight: bold;
+        font-size: 25px;
+        span{ font-size: 26px; color: #0009;}
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; 
+        
+        width: 30%;
+        height: 100%;
+
+        button {
+            padding: 8px 10px;
+            width: 120px;
+            height: 40px;
+            border-radius: 12px;
+            border: none;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        #b1 {
+            background-color: #fff;
+            &:hover {
+                background-color: #e5e5e5;
+                color: $color10;
+                cursor: pointer;
+            }
+        }
+        #b2 {
+            background-color: #fff;
+            &:hover {
+                background-color: #e5e5e5;
+                color: $color10;
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+
+}
