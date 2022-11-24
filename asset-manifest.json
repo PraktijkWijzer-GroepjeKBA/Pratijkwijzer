@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Pratijkwijzer/static/css/main.9fb94d07.css",
+    "main.js": "/Pratijkwijzer/static/js/main.5c55c5b9.js",
+    "static/media/about-page-logo.png": "/Pratijkwijzer/static/media/about-page-logo.3e9ed49eb189789f1fae.png",
+    "static/media/front-page-image.png": "/Pratijkwijzer/static/media/front-page-image.0339cb49f4555abdea6b.png",
+    "static/media/camping-spots.png": "/Pratijkwijzer/static/media/camping-spots.63ebda3160f94f9c4cea.png",
+    "static/media/mole-logo-image.png": "/Pratijkwijzer/static/media/mole-logo-image.88513a18a09169be8652.png",
+    "static/media/pool-image.png": "/Pratijkwijzer/static/media/pool-image.051b573d49df44604935.png",
+    "static/media/restaurant-image.png": "/Pratijkwijzer/static/media/restaurant-image.11a565cf615f732b2a4a.png",
+    "static/media/kaart.png": "/Pratijkwijzer/static/media/kaart.ce28619a5eabdd113bb0.png",
+    "static/media/playground-image.png": "/Pratijkwijzer/static/media/playground-image.f0d0b345bb27e5de34f2.png",
+    "static/media/mountain-image.png": "/Pratijkwijzer/static/media/mountain-image.cd6c3536017b31cbe27e.png",
+    "static/media/home-page-image.png": "/Pratijkwijzer/static/media/home-page-image.fef755c50fdc6568d597.png",
+    "static/media/test.png": "/Pratijkwijzer/static/media/test.d0725b188ffb04377bf7.png",
+    "index.html": "/Pratijkwijzer/index.html",
+    "main.9fb94d07.css.map": "/Pratijkwijzer/static/css/main.9fb94d07.css.map",
+    "main.5c55c5b9.js.map": "/Pratijkwijzer/static/js/main.5c55c5b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fb94d07.css",
+    "static/js/main.5c55c5b9.js"
+  ]
+}
