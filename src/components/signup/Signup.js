@@ -17,7 +17,6 @@ const Signup = ({ openSignupModal, onCloseSignup }) => {
 
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
-  const [registerRepeatPassword, setRegisterRepeatPassword] = useState("");
   const [registerFirstName, setRegisterFirstName] = useState("");
   const [registerLastName, setRegisterLastName] = useState("");
 
@@ -63,7 +62,7 @@ const Signup = ({ openSignupModal, onCloseSignup }) => {
         </div>
         <div className='input-field'>
           <label>Repeat password</label>
-          <input type='password' alt='#' placeholder='Password...' onChange={(e) => { setRegisterRepeatPassword(e.target.value); }}></input>
+          <input type='password' alt='#' placeholder='Repeat Password...'></input>
         </div>
           <div className='input-container'>
             <div className='field'>

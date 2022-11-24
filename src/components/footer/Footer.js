@@ -8,28 +8,28 @@ const Footer = () => {
             <div className='footer-column-container'>
                 <div className='footer-header'>Resources</div>
                 <div className='footer-text'>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
+                    <a className='text-link' href='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
                 </div>
             </div>
             <div className='footer-column-container'>
             <div className='footer-header'>Contacts</div>
                 <div className='footer-text'>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
                 </div>
             </div>
             <div className='footer-column-container'>
             <div className='footer-header'>Links</div>
                 <div className='footer-text'>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
-                    <a className='text-link'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
+                    <a className='text-link' ref='#'>Lorem ipsum</a>
                 </div>
             </div>
         </div>

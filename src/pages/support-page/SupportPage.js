@@ -17,7 +17,7 @@ const SupportPage = () => {
                 </div>
                 <div className='box__right-container'>
                     <div className='image-container-support'>
-                        <img src={image}></img>
+                        <img src={image} alt="img"></img>
                     </div>
                     <div className='information-container'>
                         <h3>Telephone:  + 958305398</h3>

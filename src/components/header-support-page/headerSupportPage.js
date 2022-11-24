@@ -7,7 +7,7 @@ const HeaderSupport = () => {
   return (
     <div className='header'>
       
-          <div className='title'>CampingMolerat &nbsp; <span>-> Support</span></div>
+          <div className='title'>CampingMolerat &nbsp; <span>Support</span></div>
 
           <div className='buttons'>
           <Link to='../Login'><button id="b1">Login</button></Link>
