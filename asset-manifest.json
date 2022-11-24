@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Pratijkwijzer/static/css/main.9fb94d07.css",
-    "main.js": "/Pratijkwijzer/static/js/main.5c55c5b9.js",
+    "main.js": "/Pratijkwijzer/static/js/main.7240115c.js",
     "static/media/about-page-logo.png": "/Pratijkwijzer/static/media/about-page-logo.3e9ed49eb189789f1fae.png",
     "static/media/front-page-image.png": "/Pratijkwijzer/static/media/front-page-image.0339cb49f4555abdea6b.png",
     "static/media/camping-spots.png": "/Pratijkwijzer/static/media/camping-spots.63ebda3160f94f9c4cea.png",
@@ -15,10 +15,10 @@
     "static/media/test.png": "/Pratijkwijzer/static/media/test.d0725b188ffb04377bf7.png",
     "index.html": "/Pratijkwijzer/index.html",
     "main.9fb94d07.css.map": "/Pratijkwijzer/static/css/main.9fb94d07.css.map",
-    "main.5c55c5b9.js.map": "/Pratijkwijzer/static/js/main.5c55c5b9.js.map"
+    "main.7240115c.js.map": "/Pratijkwijzer/static/js/main.7240115c.js.map"
   },
   "entrypoints": [
     "static/css/main.9fb94d07.css",
-    "static/js/main.5c55c5b9.js"
+    "static/js/main.7240115c.js"
   ]
 }
