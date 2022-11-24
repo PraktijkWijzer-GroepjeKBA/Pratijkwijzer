@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/praktijk/static/css/main.9f61be31.css",
-    "main.js": "/praktijk/static/js/main.9944f8af.js",
+    "main.js": "/praktijk/static/js/main.7829a3d0.js",
     "static/media/about-page-logo.png": "/praktijk/static/media/about-page-logo.3e9ed49eb189789f1fae.png",
     "static/media/front-page-image.png": "/praktijk/static/media/front-page-image.0339cb49f4555abdea6b.png",
     "static/media/camping-spots.png": "/praktijk/static/media/camping-spots.63ebda3160f94f9c4cea.png",
@@ -15,10 +15,10 @@
     "static/media/test.png": "/praktijk/static/media/test.d0725b188ffb04377bf7.png",
     "index.html": "/praktijk/index.html",
     "main.9f61be31.css.map": "/praktijk/static/css/main.9f61be31.css.map",
-    "main.9944f8af.js.map": "/praktijk/static/js/main.9944f8af.js.map"
+    "main.7829a3d0.js.map": "/praktijk/static/js/main.7829a3d0.js.map"
   },
   "entrypoints": [
     "static/css/main.9f61be31.css",
-    "static/js/main.9944f8af.js"
+    "static/js/main.7829a3d0.js"
   ]
 }
