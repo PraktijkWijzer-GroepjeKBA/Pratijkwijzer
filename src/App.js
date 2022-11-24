@@ -1,11 +1,6 @@
 // React Router
 import { Route, Routes } from "react-router-dom";
 
-
-//components
-import Login from './components/login/Login';
-import Signup from './components/signup/Signup';
-
 //pages
 import Frontpage from './pages/front-page/Frontpage';
 import Homepage from "./pages/home-page/Homepage";
